@@ -10,10 +10,9 @@ jobs:
   pull:
       runs-on: self-hosted
       steps:
-        -uses: actions/checkout@v2
-
-        -name: deployment
-        -run: |
-          echo Home=$Home
-          cd $Home/nala-os
-          git pull
+        - uses: actions/checkout@v2
+        - name: pull repository
+          run: |
+            - cd "$HOME"/nala-OS
+            - git pull
+        
