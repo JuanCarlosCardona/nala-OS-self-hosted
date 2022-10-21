@@ -13,6 +13,6 @@ jobs:
         - uses: actions/checkout@v2
         - name: pull repository
           run: |
-            - cd "$HOME"/nala-OS
-            - git pull
+             cd "$HOME"/nala-OS
+             git pull
         
