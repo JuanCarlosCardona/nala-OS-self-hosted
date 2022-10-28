@@ -1,6 +1,6 @@
-include ../common/format.mk
-include ../common/dokcer.mk
-include ../common/operating_system.mk
+include ./common/format.mk
+include ./common/docker.mk
+include ./common/operating_system.mk
 
 BSP ?= rpi4
 
