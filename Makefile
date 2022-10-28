@@ -60,7 +60,7 @@ OBJCOPY_CMD = rust-objcopy \
 	--strip-all				\
 	-O binary
 
-EXEC_QEMU = $(QEMU_BINARY) -M (QEMU_MACHINE_TYPE)
+EXEC_QEMU = $(QEMU_BINARY) -M $(QEMU_MACHINE_TYPE)
 
 DOCKER_CMD = docker run -t --rm -v $(shell pwd):/work/tutorial -w /work/tutorial
 DOCKER_CMD_INTERACT = $(DOCKER_CMD) -i
@@ -117,8 +117,8 @@ qemu:
 else # QEMU is supported.
 
 qemu: $(KERNEL_BIN)
-	$(call color_header, "Launching QEMU")
-	@$(DOCKER_QEMU) $(EXEC_QEMU) $(QEMU_RELEASE_ARGS) -kernel $(KERNEL_BIN)
+		$(call color_header, "Launching QEMU")
+		@$(DOCKER_QEMU) $(EXEC_QEMU) $(QEMU_RELEASE_ARGS) -kernel $(KERNEL_BIN)
 endif
 
 ##------------------------------------------------------------------------------

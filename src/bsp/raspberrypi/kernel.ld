@@ -1,4 +1,4 @@
-__rpi_phys_binary_load_addr = 0x80000
+__rpi_phys_binary_load_addr = 0x80000;
 
 ENTRY(__rpi_phys_binary_load_addr)
 
