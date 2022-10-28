@@ -1,5 +1,5 @@
 #![doc(
-html_logo_url = "https://raw.githubusercontent.com/rust-embedded/wg/master/assets/logo/ewg-logo-blue-white-on-transparent.png"
+html_logo_url = ""https://github.com/JuanCarlosCardona/nala-OS-self-hosted/blob/master/cat.png?raw=true
 )]
 
 #![no_main]
