@@ -8,9 +8,9 @@ fn main(){
 
     let files = fs::read_dir(ld_script_path).unwrap();
     files
-        .filer_map(Result::ok)
-        .filer(|d| {
-            if let some(e) = d.path.extension(){
+        .filter_map(Result::ok)
+        .filter(|d| {
+            if let Some(e) = d.path.extension(){
                 e == "ld"
             } else {
                 false
