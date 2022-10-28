@@ -2,7 +2,7 @@ include ./common/format.mk
 include ./common/docker.mk
 include ./common/operating_system.mk
 
-BSP ?= rpi4
+BSP ?= rpi3
 
 QEMU_MISSING_STRING = "This board is not yet supported for QEMU"
 
