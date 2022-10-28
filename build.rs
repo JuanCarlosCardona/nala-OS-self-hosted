@@ -10,11 +10,11 @@ fn main(){
     files
         .filter_map(Result::ok)
         .filter(|d| {
-            if let Some(e) = d.path.extension(){
+            if let Some(e) = d.path().extension(){
                 e == "ld"
             } else {
                 false
             }
         })
-        .for_each(|f| println!("cargo:rerun-if-changed={}", f.path.display()));
+        .for_each(|f| println!("cargo:rerun-if-changed={}", f.path().display()));
 }
