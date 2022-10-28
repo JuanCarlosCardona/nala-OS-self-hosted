@@ -1,6 +1,6 @@
 ENTRY(__rpi_phys_binary_load_addr)
 
-* Flags:
+/* Flags:
  *     4 == R
  *     5 == RX
  *     6 == RW
