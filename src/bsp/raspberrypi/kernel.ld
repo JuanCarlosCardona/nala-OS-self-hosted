@@ -13,7 +13,7 @@ ENTRY(__rpi_phys_binary_load_addr)
 
  SECTIONS
  {
-    . = __rpi_phys_binary_load_addr;
+     . =  __rpi_phys_binary_load_addr;
 
     .text :
     {
